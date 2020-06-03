@@ -10,7 +10,16 @@ r:
   - "3.6.3"
 
 install:
-  - Rscript -e 'install.packages("lubridate", quietly = TRUE)'
+  - Rscript -e 'install.packages("lubridate")'
+  - Rscript -e 'install.packages("EpiNow")'
+  - Rscript -e 'install.packages("NCoVUtils")'
+  - Rscript -e 'install.packages("future")'
+  - Rscript -e 'install.packages("dplyr")'
+  - Rscript -e 'install.packages("tidyr")'
+  - Rscript -e 'install.packages("magrittr")'
+  - Rscript -e 'install.packages("data.table")'
+  - Rscript -e 'install.packages("forecastHybrid")'
+
 
 script:
 
