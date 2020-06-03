@@ -10,7 +10,8 @@ r:
 
 install:
   - Rscript -e 'install.packages("remotes")'
-  
+  - Rscript -e 'remotes::install_github("epiforecasts/NCoVUtils")'
+  - Rscript -e 'remotes::install_github("epiforecasts/EpiNow")'
 script: 
   - cd /home/travis/build/lordcobisco/covid-br-model-epiforecasts/_nowcasts/covid-regional/
   - travis_wait 60 bash update_nowcasts_cities.sh
