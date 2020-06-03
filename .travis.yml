@@ -24,5 +24,4 @@ install:
   - Rscript -e 'install.packages("purrr")'
 
 
-script:
-  -bash /home/travis/build/covid-br-model-epiforecasts/_nowcasts/covid-regional/update_nowcasts_cities.sh
+script: bash /home/travis/build/covid-br-model-epiforecasts/_nowcasts/covid-regional/update_nowcasts_cities.sh
