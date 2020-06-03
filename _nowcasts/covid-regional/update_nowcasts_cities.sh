@@ -4,7 +4,7 @@
 #Rscript update_delay.R
 
 ## Load shared delay from github
-/home/travis/build/lordcobisco/covid-br-model-epiforecasts/_nowcasts/covid-regional/Rscript load_delay.R
+Rscript load_delay.R
 
 ## Run regions in parallel
 #Rscript germany/update_nowcasts.R & 
@@ -13,7 +13,7 @@
 #wait
 
 #Rscript united-states/update_nowcasts.R &
-Rscript /home/travis/build/lordcobisco/covid-br-model-epiforecasts/_nowcasts/covid-regional/brazil/update_nowcasts_cities.R &
+Rscript brazil/update_nowcasts_cities.R &
 #Rscript india/update_nowcasts.R &
 wait
 
