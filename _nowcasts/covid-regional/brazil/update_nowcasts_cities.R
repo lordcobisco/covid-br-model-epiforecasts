@@ -30,15 +30,7 @@ NCoVUtils::reset_cache()
 # CE Juazeiro do Norte e Sobral
 # MA Chapadinha Barra da Corda Zé Doca Timon
 
-cities <- c(
-  "AL-Maceió", "AL-Arapiraca",
-  "BA-Salvador", "BA-Salvador", "BA-Vitória da Conquista", "BA-Itabuna", "BA-Juazeiro",
-  "MA-São Luís", "MA-Imperatriz", "MA-Caxias",
-  "PB-João Pessoa", "PB-Campina Grande", "PB-Sousa", "PB-Patos",
-  "PE-Recife", "PE-Petrolina", "PE-Caruaru",
-  "PI-Teresina",
-  "RN-Natal", "RN-Mossoró",
-  "SE-Aracaju", "SE-Itabaiana")
+cities <- c("BA-Salvador")
 
 cases <- read.csv("brazil/covid-br-data/covid-br-ms-cities.csv") %>%
   transmute(
