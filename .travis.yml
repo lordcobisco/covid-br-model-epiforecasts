@@ -1,0 +1,17 @@
+version: ~> 1.0
+
+os: linux
+dist: bionic
+
+language: r
+
+r:
+
+  - "3.6.3"
+
+install:
+  - Rscript -e 'install.packages("lubridate", quietly = TRUE)'
+
+script:
+
+  -sh /home/travis/build/covid-br-model-epiforecasts/sh _nowcasts/covid-regional/update_nowcasts_cities.sh
